@@ -1,12 +1,12 @@
 #Config
-#Wed Aug 19 13:25:42 GMT-03:00 2026
+#Wed Aug 19 19:04:00 GMT-03:00 2026
 cfg.ancorador=true
 cfg.apagartextoaoeditar=true
 cfg.autosalvarintervalo=5
 cfg.gradelargura=23
 cfg.location.salvar=true
-cfg.location.x=-6
-cfg.location.y=0
+cfg.location.x=-8
+cfg.location.y=-8
 cfg.mostrardimensoesaomover=true
 cfg.mostrargrade=true
 cfg.mostrarids=false

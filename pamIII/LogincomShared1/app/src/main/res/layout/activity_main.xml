@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#0a1128"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      android:layout_marginTop="140dp"
+        android:text="Login"
+        android:textSize="45sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <EditText android:id="@+id/edt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:padding="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/borda"
+        android:textColorHint="@color/white"/>
+
+    <EditText android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:padding="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/borda"
+        android:textColorHint="@color/white"/>
+
+    <EditText android:id="@+id/edt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:background="@drawable/borda"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"/>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="start"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="40dp" >
+
+    <Button android:id="@+id/btn_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:backgroundTint="#E99A25"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="5dp" />
+
+    <Button android:id="@+id/btn_novo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criar"
+        android:backgroundTint="#E99A25"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="5dp"/>
+</LinearLayout>
+    <CheckBox android:id="@+id/ckb_lembrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lembrar minhas Credenciais"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="15dp"/>
+
+
+
+</LinearLayout>
