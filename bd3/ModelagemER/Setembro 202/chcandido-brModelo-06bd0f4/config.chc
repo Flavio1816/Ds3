@@ -1,0 +1,16 @@
+#Config
+#Wed Aug 19 13:25:42 GMT-03:00 2026
+cfg.ancorador=true
+cfg.apagartextoaoeditar=true
+cfg.autosalvarintervalo=5
+cfg.gradelargura=23
+cfg.location.salvar=true
+cfg.location.x=-6
+cfg.location.y=0
+cfg.mostrardimensoesaomover=true
+cfg.mostrargrade=true
+cfg.mostrarids=false
+cfg.mostrartooltips=true
+cfg.propaguedeletetolines=true
+cfg.recentes=C\:\\Users\\flavi\\Documents\\ModelagemER\\Conceitual Aura.brM3;C\:\\Users\\flavi\\Documents\\ModelagemER\\L\u00F3gico_exemplo.brM3;C\:\\Users\\flavi\\Documents\\ModelagemER\\Conceitual_2.brM3;C\:\\Users\\flavi\\Documents\\Conceitual_2.brM3
+cfg.tipodefault=0
