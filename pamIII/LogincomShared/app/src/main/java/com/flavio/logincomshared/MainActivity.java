@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     EditText nome, email, senha;
-    Button entrar, novo;
+    Button cadastrar, voltar;
     CheckBox lembrar;
     SharedPreferences preferences;
 
@@ -29,16 +29,24 @@ public class MainActivity extends AppCompatActivity {
 
         initComponents();
 
-        entrar.setOnClickListener(new View.OnClickListener() {
+        cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if(validarDados() ){
                     if (lembrar.isChecked()){
                         preferences = getSharedPreferences("login", 0 );
+
+                        if(preferences.contains("Nome")){
+                            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                            startActivity(intent);
+                        }
+
                         SharedPreferences.Editor dados = preferences.edit();
                     dados.putString("Nome", nome.getText().toString());
                     dados.putString("Email", email.getText().toString());
                     dados.putString("Senha", senha.getText().toString());
+                    dados.apply();
 
                     }
                 }
@@ -84,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
         nome = findViewById(R.id.edt_nome);
         email = findViewById(R.id.edt_email);
         senha = findViewById(R.id.edt_senha);
-        entrar = findViewById(R.id.btn_entrar);
-        novo = findViewById(R.id.btn_novo);
+        cadastrar = findViewById(R.id.btn_cadastrar);
+        voltar = findViewById(R.id.btn_voltar);
         lembrar = findViewById(R.id.ckb_lembrar);
     }
 }
